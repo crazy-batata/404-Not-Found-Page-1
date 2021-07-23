@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+html{
+    padding: 2.2vw 4.2vw;
+}
+.logo{
+    font-size: 1.32vw;
+    display: inline-block;
+    letter-spacing: -2px;
+    color: #333333;
+}
+.flex-container{
+    display: flex;
+    height: 100%;
+}
+.flex-container img{
+    width: 29.58vw;
+    height: 24.55vw;
+    image-rendering: pixelated;
+    align-self: center;
+    margin-right: 6.54vw;
+}
+.flex-container .text{
+    align-self: center;
+    width: 40%;
+}
+.flex-container .text h1{
+    font-size: 3.51vw;
+    color: #333333;
+    font-weight: 700;
+    margin-bottom: 1.95vw;
+    display: inline-block;
+
+}
+.flex-container .text p{
+    font-size: 1.315vw;
+    color: #4F4F4F;
+    margin-bottom: 3.5vw;
+    display: inline-block;
+}
+.flex-container .text button{
+    border: transparent;
+    font-size: 0.771vw;
+    width: 11.85vw;
+    height: 3.7vw;
+    background: #333333;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 425px) {
+    html{
+        padding: 4.6vw 5.5vw;
+    }
+    .logo{
+        font-size: 5.8vw;
+    }
+    .flex-container{
+        flex-direction: column;
+        margin-top:20vw ;
+    }
+    .flex-container img{
+        width: 67.5vw;
+        height: 56vw;
+        margin-bottom: 18.8vw;
+    }
+    .flex-container .text{
+        width: 100%;
+    }
+    .flex-container .text h1{
+        font-size: 11.4vw;
+        margin-bottom:11vw ;
+    }
+    .flex-container .text p{
+        font-size: 4.465vw;
+        margin-bottom:15.8vw ;
+    }
+    .flex-container .text button{
+        font-size: 4.4vw;
+        width: 67.6vw;
+        height: 21.1vw;
+        margin-bottom: 20.7vw;
+    }
+    
+}
